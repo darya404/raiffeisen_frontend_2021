@@ -1,0 +1,272 @@
+* {
+    font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  }
+  
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.woff')
+        format('woff');
+        font-weight: normal;
+        font-style: normal;
+  }
+  
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+  }
+     
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+  }
+  
+  @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Bold-Web.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+  }
+  
+  button {
+    font-size: 14px;
+    border-radius: 8px;
+    
+    pointer: cursor;
+  }
+  
+  body {
+    position: relative;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center; 
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    
+    height: 80px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  
+  .logo {
+    position: absolute;
+    left: 32px;
+  }
+  
+  .user-info {
+    display: flex;
+    position: absolute;
+    right: 100px;
+  }
+  
+  .user-pic {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  
+  .exit {
+    position: absolute;
+    right: 35px;
+  }
+  
+  .content {
+    position: relative;
+    top: 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .announcement {
+    display: flex;
+    
+    position: absolute;
+    
+    width: 1030px;
+    background: #CFF1E9;
+    border-radius: 32px;
+   }
+  
+  .announcement-info {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 40px 48px;
+  }
+  
+  .announcement-type {
+    font-size: 14px;
+    font-weight: 500;  
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  .announcement-name {
+    font: Navigo;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .announcement-details {
+    font-size: 14px;
+    line-height: 22px;
+    
+    margin-bottom: 36px;
+  }
+  
+  .active-element {
+    background: #2B2D33;
+    color: #FFFFFF;
+  }
+  
+  .announcement-button {
+    border-width: 0px;
+    height: 48px;
+    width: 197px;
+    
+    cursor: pointer;
+  }
+  
+  .events {
+    position: absolute;
+    top: 356px;
+    width: 1030px;
+  }
+  
+  h1 {
+    margin-top: 0;
+    
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .events-sections {
+    display: flex;
+    margin-top: 32px;
+    
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .events-section-name {
+    border-radius: 16px;
+    border-width: 0px;
+    padding: 5px 16px;
+    background: #F4F4F4;
+  }
+  
+  .events-section-name:nth-child(n+2) {
+    margin-left: 8px; 
+  }
+  
+  .active-element {
+    background: #2B2D33;
+    color: #FFFFFF;
+  }
+  
+  .events-info {
+    margin-top: 40px;
+  }
+  
+  .event {
+    display: flex;
+    
+    width: 1030px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .event-date {
+    padding-right: 23px;
+    padding-left: 8px;
+  }
+  
+  .event-details {
+    padding-right: 8px;
+    padding-left: 8px;
+    
+    width: 442px;
+  }
+  
+  .event-name {
+    margin-bottom: 4px;
+  }
+  
+  .event-description {
+    font-size: 12px;
+    line-height: 18px;
+    color: #AAABAD;
+  }
+  
+  .like-counter {
+    padding-right: 43px;
+    padding-left: 9px;
+  }
+  
+  .managers {
+    color: #00A5BC; 
+    
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  
+  .manager {
+    width: 177px;
+  }
+  .registration {
+    padding-left: 15px;
+  }
+  
+  .registration-button {
+    width: 179px;
+    height: 36px;
+    border: 2px solid #D5D5D6;
+    background: white;
+  }
+  
+  
+  .lock-button {
+    border: 2px solid #E9EAEA;
+    color: rgba(43, 45, 51, 0.24);
+  }
+  
+  .modal-window-background {
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    display: none;
+  
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
