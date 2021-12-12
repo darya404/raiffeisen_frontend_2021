@@ -13,7 +13,7 @@
         </div>
         <div class='user-info'>
             <div class='user-name'>Валентин Костин</div>
-            <div class='user-pic'> 
+            <div class='user-pic'>
                 <img src='./img/Avatar.png'>
             </div>
         </div>
@@ -36,91 +36,95 @@
                 <input type='radio' name='event-section' class='events-section-name'>Retail</input>
                 <input type='radio' name='event-section' class='events-section-name'>Остальные</input>
             </div>
-            <div class='events-info'>
-                <div class='event'>
-                    <div class='event-date'>
-                        25.05.2020
-                    </div>
-                    <div class='event-details'>
-                        <div class='event-name'>
-                            Веницианский карнавал танцев и богохульных плясок: смотрим вместе
-                        </div>
-                        <div class='event-description'>
-                            К посещению приглашаются сотрудники 18-
-                        </div>
-                    </div>
-                    <div class='like-counter'>
-                        <img src='./img/shape.svg'>11
-                    </div>
-                    <div class='managers'>
-                        <div class='manager'>Иннокентий Жданов</div>
-                        <div class='manager'>Поликарпий Осипов</div>
-                    </div>
-                    <button class='registration-button'>Зарегистрироваться</button>
-                </div>
-                <div class='event'>
-                    <div class='event-date'>
-                        25.05.2020
-                    </div>
-                    <div class='event-details'>
-                        <div class='event-name'>
-                            Солнцестоим вместе или как провести выходные продуктивно
-                        </div>
-                        <div class='event-description'>
-                            Если вы люите солнце и стоять - то данный курс вам очень подойдет. Мы вместе будем стоять и
-                            смотреть на солнце. Чистый кайф.
-                        </div>
-                    </div>
-                    <div class='like-counter'>
-                        <img src='./img/shape.svg'>110
-                    </div>
-                    <div class='managers'>
-                        <div class='manager'>Николай Острецов</div>
-                    </div>
-                    <button class='registration-button'>Регистрация закрыта</button>
-                </div>
-                <div class='event'>
-                    <div class='event-date'>
-                        25.05.2020
-                    </div>
-                    <div class='event-details'>
-                        <div class='event-name'>
-                            Бредовые макеты и как с ним работать: спитч о проблемах друзей-фронтендеров
-                        </div>
-                        <div class='event-description'>
-                            Что делать если в дизайне, который вам отправил дизайнер написаны бредовые тексты?
-                            Посмеяться?! Это что для вас шуточки?!
-                        </div>
-                    </div>
-                    <div class='like-counter'>
-                        <img src='./img/shape.svg'>11
-                    </div>
-                    <div class='managers'>
-                        <div class='manager'>Акакий Шопский</div>
-                    </div>
-                    <button class='registration-button'>Зарегистрироваться</button>
-                </div>
-                <div class='event'>
-                    <div class='event-date'>
-                        25.05.2020
-                    </div>
-                    <div class='event-details'>
-                        <div class='event-name'>
-                            Аукцион: лоснящаяся шкура золотого дракона Монина. Что скрывается в повале офиса Нагатино?
-                        </div>
-                        <div class='event-description'>
-                            Если у вас еще осталась зарплата - приходите, мы будем рады ее забрать
-                        </div>
-                    </div>
-                    <div class='like-counter'>
-                        <img src='./img/shape.svg'>11
-                    </div>
-                    <div class='managers'>
-                        <div class='manager'>Иван Стручков</div>
-                    </div>
-                    <button class='registration-button'>Регистрация закрыта</button>
-                </div>
-            </div>
+            <table class='events-schedule'>
+                <tr>
+                    <td class='dates'>
+                        <p class='event-date'>25.05.2020</p>
+                    </td>
+                    <td class='info'>
+                        <p class='event-name'>Веницианский карнавал танцев и богохульных плясок: смотрим вместе</p>
+                        <p class='event-description'>К посещению приглашаются сотрудники 18-</p>
+                    </td>
+                    <td class='likes'>
+                        <button class='like-button' type='button'>
+                            <span class='like-counter'>11</span>
+                        </button>
+                    </td>
+                    <td class='persons'>
+                        <p>Иннокентий Жданов</p>
+                        <p>Поликарпий Осипов</p>
+                    </td>
+                    <td class='event-buttons'>
+                        <button class='registration-button'>Зарегистрироваться</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='dates'>
+                        <p class='event-date'>25.05.2020</p>
+                    </td>
+                    <td class='info'>
+                        <p class='event-name'>Солнцестоим вместе или как провести выходные продуктивно</p>
+                        <p class='event-description'>Если вы люите солнце и стоять - то данный курс вам очень подойдет.
+                            Мы вместе будем стоять и смотреть на солнце. Чистый кайф.</p>
+                    </td>
+                    <td class='likes'>
+                        <button class='like-button' type='button'>
+                            <span class='like-counter'>110</span>
+                        </button>
+                    </td>
+                    <td class='persons'>
+                        <p>Николай Острецов</p>
+                    </td>
+                    <td class='event-buttons'>
+                        <button class='lock-button'>Регистрация закрыта</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='dates'>
+                        <p class='event-date'>25.05.2020</p>
+                    </td>
+                    <td class='info'>
+                        <p class='event-name'>Бредовые макеты и как с ним работать: спитч о проблемах
+                            друзей-фронтендеров</p>
+                        <p class='event-description'>Что делать если в дизайне, который вам отправил дизайнер написаны
+                            бредовые тексты? Посмеяться?! Это что для вас шуточки?!</p>
+                    </td>
+                    <td class='likes'>
+                        <button class='like-button' type='button'>
+                            <span class='like-counter'>11</span>
+                        </button>
+                    </td>
+                    <td class='persons'>
+                        <p>Акакий Шопский</p>
+                    </td>
+                    <td class='event-buttons'>
+                        <button class='registration-button'>Зарегистрироваться</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='dates'>
+                        <p class='event-date'>25.05.2020</p>
+                    </td>
+                    <td class='info'>
+                        <p class='event-name'>Аукцион: лоснящаяся шкура золотого дракона Монина. Что скрывается в повале
+                            офиса Нагатино?</p>
+                        <p class='event-description'>Если у вас еще осталась зарплата - приходите, мы будем рады ее
+                            забрать</p>
+                    </td>
+                    <td class='likes'>
+                        <button class='like-button' type='button'>
+                            <span class='like-counter'>11</span>
+                        </button>
+                    </td>
+                    <td class='persons'>
+                        <p>Иван Стручков</p>
+                    </td>
+                    <td class='event-buttons'>
+                        <button class='lock-button'>Регистрация закрыта</button>
+                    </td>
+                </tr>
+
+            </table>
         </section>
     </main>
     <div class='show modal-window-background'>
