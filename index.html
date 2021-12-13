@@ -31,10 +31,24 @@
         <section class='events'>
             <h1>Все мероприятия</h1>
             <div class='events-sections'>
-                <input type='radio' name='event-section' class='events-section-name active-element'>IT Academy</input>
-                <input type='radio' name='event-section' class='events-section-name'>Маркетинг</input>
-                <input type='radio' name='event-section' class='events-section-name'>Retail</input>
-                <input type='radio' name='event-section' class='events-section-name'>Остальные</input>
+                <div class='events-section-name'>
+                    <input type='radio' name='event-section' id='IT'
+                        value='IT Academy'>
+                    <label for='IT'>IT Academy</label>
+                </div>
+                <div class='events-section-name'>
+                    <input type='radio' name='event-section' id='marketing'
+                        value='Маркетинг'>
+                    <label for='marketing'>Маркетинг</label>
+                </div>
+                <div class='events-section-name'>
+                    <input type='radio' name='event-section' id='retail' value='Retail'>
+                    <label for='retail'>Retail</label>
+                </div>
+                <div class='events-section-name'>
+                    <input type='radio' name='event-section' class='events-section-name' id='others' value='Остальные'>
+                    <label for='others'>Остальные</label>
+                </div>
             </div>
             <table class='events-schedule'>
                 <tr>
