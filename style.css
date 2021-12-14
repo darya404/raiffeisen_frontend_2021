@@ -47,7 +47,7 @@ p {
 button {
   font-size: 14px;
   border-radius: 8px;
-
+  border-width: 0px;
   cursor: pointer;
 }
 
@@ -107,16 +107,20 @@ body {
 .announcement {
   display: flex;
 
+  position: relative;
+
   width: 1030px;
 
   background: #CFF1E9;
   border-radius: 32px;
+
+  box-sizing: border-box;
+  height: 300px;
 }
 
 .announcement-info {
-  display: flex;
-  flex-direction: column;
-
+  position: absolute;
+  z-index: 100;
   padding: 40px 48px;
 }
 
@@ -129,7 +133,7 @@ body {
 }
 
 .announcement-name {
-  font: Navigo;
+  font-family: Navigo;
   font-weight: bold;
   font-size: 40px;
   line-height: 56px;
@@ -138,23 +142,40 @@ body {
 }
 
 .announcement-details {
+  display: flex;
+
   font-size: 14px;
   line-height: 22px;
+  font-weight: 500;
 
   margin-bottom: 36px;
 }
 
-.active-element {
-  background: #2B2D33;
-  color: #FFFFFF;
+.announcement-details p {
+  margin-right: 6px;
 }
 
 .announcement-button {
-  border-width: 0px;
   height: 48px;
   width: 197px;
 
-  cursor: pointer;
+  background: #2B2D33;
+  color: #FFFFFF;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.announcement-img {
+  position: absolute;
+  right: 0;
+}
+
+.cloud {
+  position: absolute;
+  bottom: 18.89px;
+  right: 0;
 }
 
 .events {
@@ -188,8 +209,9 @@ h1 {
 }
 
 .events-section-name input[type=radio] {
-	display: none;
+  display: none;
 }
+
 .events-section-name label {
   display: inline-block;
   cursor: pointer;
@@ -198,9 +220,9 @@ h1 {
   padding: 5px 16px;
   background: #F4F4F4;
 }
- 
-.events-section-name input[type=radio]:checked + label {
-	background: #2B2D33;
+
+.events-section-name input[type=radio]:checked+label {
+  background: #2B2D33;
   color: #FFFFFF;
 }
 
