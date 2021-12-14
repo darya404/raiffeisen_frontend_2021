@@ -426,7 +426,7 @@ h2 {
   margin-bottom: 4px;
 }
 
-.registration-inputs input {
+.registration-inputs input, textarea {
   width: 536px;
   border: 1px solid #D5D5D6;
   box-sizing: border-box;
@@ -441,8 +441,10 @@ h2 {
 }
 
 .comment-input {
-  height: 80px;
+  height: 80px;  
+  resize: none;
 }
+
 
 .final-registration {
   background: #FEE600;
@@ -475,3 +477,4 @@ h2 {
   width: 15px;
   padding: 0;
 }
+
