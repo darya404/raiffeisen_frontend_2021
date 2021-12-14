@@ -38,21 +38,21 @@
         </section>
         <section class='events'>
             <h1>Все мероприятия</h1>
-            <div class='events-sections'>
-                <div class='events-section-name'>
+            <div class='radio-buttons'>
+                <div class='radio-buttons-name'>
                     <input type='radio' name='event-section' id='IT' value='IT Academy'>
                     <label for='IT'>IT Academy</label>
                 </div>
-                <div class='events-section-name'>
+                <div class='radio-buttons-name'>
                     <input type='radio' name='event-section' id='marketing' value='Маркетинг'>
                     <label for='marketing'>Маркетинг</label>
                 </div>
-                <div class='events-section-name'>
+                <div class='radio-buttons-name'>
                     <input type='radio' name='event-section' id='retail' value='Retail'>
                     <label for='retail'>Retail</label>
                 </div>
-                <div class='events-section-name'>
-                    <input type='radio' name='event-section' class='events-section-name' id='others' value='Остальные'>
+                <div class='radio-buttons-name'>
+                    <input type='radio' name='event-section' id='others' value='Остальные'>
                     <label for='others'>Остальные</label>
                 </div>
             </div>
@@ -148,7 +148,38 @@
         </section>
     </main>
     <div class='show modal-window-background'>
-        <div class='modal-window'></div>
+        <div class='modal-window'>
+            <h2>Запись на мероприятие</h2>
+            <p class='instruction'>Выберите необходимые параметры мероприятия</p>
+            <div class='choosen-event'>
+                <p class='chosen-event-name'>Веницианский карнавал танцев и богохульных плясок: смотрим вместе</p>
+                <p class='event-description'>К посещению приглашаются сотрудники 18-</p>
+            </div>
+            <div class='radio-buttons event-types'>
+                <div class='radio-buttons-name event-type'>
+                    <input type='radio' name='event-type' id='Online' value='Online'>
+                    <label for='Online'>Онлайн</label>
+                </div>
+                <div class='radio-buttons-name event-type'>
+                    <input type='radio' name='event-type' id='Offline' value='Offline'>
+                    <label for='Offline'>Офлайн: офис Нагатино</label>
+                </div>
+            </div>
+            <div class='registration-inputs'>
+                <div class='who'>
+                    <label class='who-label' for='who'>Кто пойдет на мероприятие</label>
+                    <input class='who-input' type='text' name='who' id='who' placeholder='Логин или имя сотрудника'>
+                </div>
+                <div class='comment'>
+                    <label class='comment-label' for='comment'>Комментарий</label>
+                    <input class='comment-input' type='textarea' name='comment' id='comment'
+                        placeholder='Дополнительная информация'>
+                </div>
+            </div>
+            <button class='final-registration'>Зарегистрироваться</button>
+            <button class=cancel>Отмена</button>
+            <button class='close' type='button'></button>
+        </div>
     </div>
 </body>
 

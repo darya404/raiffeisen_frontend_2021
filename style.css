@@ -88,7 +88,7 @@ body {
 
   padding: 0;
 
-  width: 162px; 
+  width: 162px;
   height: 32px;
 
   font-size: 14px;
@@ -220,7 +220,7 @@ h1 {
   line-height: 40px;
 }
 
-.events-sections {
+.radio-buttons {
   display: flex;
   margin-top: 32px;
 
@@ -229,19 +229,19 @@ h1 {
   line-height: 22px;
 }
 
-.events-section-name {
+.radio-buttons-name {
   display: inline-block;
 }
 
-.events-section-name:nth-child(n+2) {
+.radio-buttons-name:nth-child(n+2) {
   margin-left: 8px;
 }
 
-.events-section-name input[type=radio] {
+.radio-buttons-name input[type=radio] {
   display: none;
 }
 
-.events-section-name label {
+.radio-buttons-name label {
   display: inline-block;
   cursor: pointer;
   border-radius: 16px;
@@ -250,7 +250,7 @@ h1 {
   background: #F4F4F4;
 }
 
-.events-section-name input[type=radio]:checked+label {
+.radio-buttons-name input[type=radio]:checked+label {
   background: #2B2D33;
   color: #FFFFFF;
 }
@@ -356,4 +356,122 @@ td {
 
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: flex;
+}
+
+.modal-window {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  position: relative;
+
+  width: 600px;
+  /* height: 610px; */
+  border-radius: 16px;
+
+  padding: 32px;
+}
+
+h2 {
+  font-family: Navigo;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+.instruction {
+  color: #808185;
+  margin-bottom: 24px;
+}
+
+.choosen-event {
+  background: #F4F4F4;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.chosen-event-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.event-types {
+  margin: 0;
+}
+
+.event-type label {
+  padding: 7px 20px;
+}
+
+.registration-inputs {
+  margin-top: 24px;
+}
+
+.registration-inputs label {
+  display: block;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-bottom: 4px;
+}
+
+.registration-inputs input {
+  width: 536px;
+  border: 1px solid #D5D5D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+
+  padding: 7px 12px;
+  margin-bottom: 24px;
+}
+
+.comment-input {
+  height: 80px;
+}
+
+.final-registration {
+  background: #FEE600;
+  border: none;
+  padding: 7px 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #2B2D33;
+}
+
+.cancel {
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+
+  background-color: transparent;
+  background-image: url(img/Close.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  border: none;
+  border-radius: 0%;
+
+  height: 15px;
+  width: 15px;
+  padding: 0;
 }
