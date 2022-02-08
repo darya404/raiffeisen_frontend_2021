@@ -5,8 +5,7 @@
     <meta charset='UTF-8'>
     <link rel='stylesheet' href='normalize.css'>
     <link rel='stylesheet' href='css/style.css'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <script src='./js/mock.js' type="module"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>    
 </head>
 
 <body>
@@ -148,7 +147,7 @@
             </table>
         </section>
     </main>
-    <div class='show modal-window-background'>
+    <div class='modal-window-background'>
         <div class='modal-window'>
             <h2>Запись на мероприятие</h2>
             <p class='instruction'>Выберите необходимые параметры мероприятия</p>
@@ -178,10 +177,16 @@
                 </div>
             </div>
             <button class='final-registration'>Зарегистрироваться</button>
-            <button class=cancel>Отмена</button>
-            <button class='close' type='button'></button>
+            <button class='cancel'>Отмена</button>
+            <button class='close' type='button'>
+                <img src='./img/Close.svg'>
+            </button>
         </div>
     </div>
+    <script src='./js/mock.js' type="module"></script>
+    <script src='./js/getData.js' type="module"></script>
+    <script src='./js/renderData.js' type="module"></script>
+    <script src='./js/popup.js' type="module"></script>
 </body>
 
 </html>
