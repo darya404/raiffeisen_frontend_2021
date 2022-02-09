@@ -3,7 +3,6 @@
 
 // data - массив объектов
 // структура моих данных: таблица -> ячейки -> p или кнопки
-import { getData } from "./getData";
 
 const createTableRows = (event) => {
     const eventsTable = document.querySelector(".events-schedule");
@@ -46,5 +45,3 @@ export const renderList = (data) => {
         createTableRows(event);
     };
 };
-
-getData(renderList);

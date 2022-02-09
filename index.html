@@ -57,7 +57,7 @@
                 </div>
             </div>
             <table class='events-schedule'>
-                <tr>
+                <!-- <tr>
                     <td class='dates'>
                         <p class='event-date'>25.05.2020</p>
                     </td>
@@ -142,7 +142,7 @@
                     <td class='event-buttons'>
                         <button class='lock-button'>Регистрация закрыта</button>
                     </td>
-                </tr>
+                </tr> -->
             </table>
         </section>
     </main>
@@ -182,10 +182,16 @@
             </button>
         </div>
     </div>
-    <script src='./js/mock.js' type="module"></script>
-    <script src='./js/getData.js' type="module"></script>
-    <script src='./js/popup.js' type="module"></script>
-    <script src='./js/renderList.js' type="module"></script>
+    <script type='module'>
+        import * as mock from './js/mock.js';
+        import * as popup from './js/popup.js';
+        import * as getData from './js/getData.js';
+        import * as render from './js/renderList.js';
+
+        await getData.getData(render.renderList);
+
+        popup.listenButtons();
+    </script>
 </body>
 
 </html>
