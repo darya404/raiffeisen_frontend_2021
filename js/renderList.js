@@ -20,13 +20,18 @@ const createTableRows = (event) => {
         .split("-")
         .reverse()
         .join(".");
+    let names = event.names
+        .map((name) => {
+        return '<p>' + name + '</p>';
+        })
+        .join("\n");
     let buttonCondition = event.registrationDisabled ? `<button class='lock-button'>Регистрация закрыта</button>` : `<button class='registration-button'>Зарегистрироваться</button>`;
 
     dateCell.innerHTML = `<p class='event-date'>${date}</p>`;
     infoCell.innerHTML = `<p class='event-name'>${event.title}</p>
                     <p class='event-description'>${event.description}</p>`;
     likeCell.innerHTML = `<span class='like-counter'>${event.countLikes}</span>`;
-    personsCell.innerHTML = `<p>${event.names}</p>`;
+    personsCell.innerHTML = `${names}`;
     buttonCell.innerHTML = `${buttonCondition}`;
 
     dateCell.classList.add("date");
